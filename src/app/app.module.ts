@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app.routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { SignInComponent } from './componets/sign-in/sign-in.component';
@@ -12,12 +14,12 @@ import { NavbarComponent } from './componets/navbar/navbar.component';
     SignInComponent,
     SignUpComponent,
     HomepageComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule,
+           AppRoutingModule],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
