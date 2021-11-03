@@ -5,6 +5,10 @@ import { SignInComponent } from './componets/sign-in/sign-in.component';
 import { SignUpComponent } from './componets/sign-up/sign-up.component';
 import { HomepageComponent } from './componets/homepage/homepage.component';
 import { NavbarComponent } from './componets/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,7 +19,8 @@ import { NavbarComponent } from './componets/navbar/navbar.component';
     NavbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
