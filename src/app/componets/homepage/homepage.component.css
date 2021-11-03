@@ -1,0 +1,5 @@
+.text{
+    align-content: center;
+    text-align: center;
+    backface-visibility: hidden;
+}
