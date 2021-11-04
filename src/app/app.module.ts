@@ -17,7 +17,9 @@ import { FormsModule } from '@angular/forms';
     SignUpComponent,
     HomepageComponent,
     NavbarComponent,
+    NavbarComponent
   ],
+
   imports: [
           BrowserModule,
           AppRoutingModule,
