@@ -7,10 +7,8 @@ import { SignInComponent } from './componets/sign-in/sign-in.component';
 import { SignUpComponent } from './componets/sign-up/sign-up.component';
 import { HomepageComponent } from './componets/homepage/homepage.component';
 import { NavbarComponent } from './componets/navbar/navbar.component';
-import { AppRoutingModule } from './app-routing.module';
-
-
-
+import{HttpClientModule} from '@angular/common/http'
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,12 +19,15 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponent,
     NavbarComponent
   ],
+
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  imports: [BrowserModule,
-           AppRoutingModule],
+          BrowserModule,
+          AppRoutingModule,
+          HttpClientModule,
+          FormsModule,
+          ],
+
+
 
   providers: [],
   bootstrap: [AppComponent],
